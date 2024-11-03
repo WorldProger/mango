@@ -5,7 +5,6 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import com.worldproger.mango.app.Routes
 
-// Граф Splash
 fun NavGraphBuilder.splashGraph(navController: NavController) {
     composable<Routes.Splash> {
         SplashScreen(

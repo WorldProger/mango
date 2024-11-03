@@ -79,6 +79,6 @@ private fun parseErrorMessage(responseBody: String): String? {
         val errorMessage = json.decodeFromString<ErrorMessage>(responseBody)
         errorMessage.message
     } catch (e: Exception) {
-        null // Возвращаем null, если декодирование не удалось
+        null
     }
 }

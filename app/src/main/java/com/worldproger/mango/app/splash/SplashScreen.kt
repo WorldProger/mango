@@ -41,8 +41,6 @@ fun SplashScreen(
 
     val infiniteTransition = rememberInfiniteTransition(label = "splash")
 
-
-    // Fade-in animation for the title text
     val alpha by infiniteTransition.animateFloat(
         initialValue = 0f,
         targetValue = 1f,
@@ -72,9 +70,9 @@ fun SplashScreen(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "MANGO",
+                text = "Mango",
                 modifier = Modifier.alpha(alpha),
-                style = MaterialTheme.typography.headlineLarge.copy( // Larger, bolder text style
+                style = MaterialTheme.typography.headlineLarge.copy(
                     fontWeight = FontWeight.ExtraBold,
                     fontSize = 48.sp,
                     color = Color.White

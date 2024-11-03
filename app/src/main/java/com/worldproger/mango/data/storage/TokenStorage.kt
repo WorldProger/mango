@@ -28,7 +28,6 @@ class TokenStorage(
         EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
     )
 
-    // Retrieves auth tokens from storage
     fun getAuthTokens(): Tokens? {
         Log.d(TAG, "Retrieving auth tokens")
         val accessToken = sharedPreferences.getString(ACCESS_TOKEN, null)
@@ -42,7 +41,6 @@ class TokenStorage(
         }
     }
 
-    // Saves the auth tokens into storage
     suspend fun saveAuthTokens(
         tokens: Tokens
     ): Result<Unit> {
@@ -64,7 +62,6 @@ class TokenStorage(
         return Result.success(Unit)
     }
 
-    // Deletes all tokens from storage
     fun deleteAll() {
         Log.d(TAG, "Deleting all tokens")
         sharedPreferences.edit().clear().apply()
