@@ -112,7 +112,7 @@ fun RegisterScreen(
                 if (state.isLoading) {
                     CircularProgressIndicator(modifier = Modifier.size(24.dp))
                 } else {
-                    Text(stringResource(R.string.send_code))
+                    Text(stringResource(R.string.continue_label))
                 }
             }
         }

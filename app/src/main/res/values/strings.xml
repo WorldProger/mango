@@ -3,6 +3,7 @@
     <string name="enter_phone_number">Добро пожаловать</string>
     <string name="phone_number_label">Номер телефона</string>
     <string name="send_code">Отправить код</string>
+    <string name="continue_label">Продолжить</string>
     <string name="select_country">Выберите страну</string>
     <string name="search_country">Поиск страны</string>
     <string name="enter_code">Введите код</string>
